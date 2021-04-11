@@ -1,0 +1,52 @@
+//typography: base styles for fonts, p, a, standard h1, h2 ...
+
+body {
+    font-family: $Roboto;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 700;
+    color: $black;
+}
+
+hr, .hr {
+    display: block;
+    margin: 10px auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+a, .a {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    color: $black;
+}
+
+ul, .ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol, .ol {
+    list-style-type: none;
+}
+
+mark, .mark {
+    background-color: $colorSilver;
+    color: $black;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+}
+

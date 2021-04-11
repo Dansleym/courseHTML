@@ -1,0 +1,53 @@
+.works {
+    padding-top: 23px;
+    padding-bottom: 48px;
+
+    @include hovers() {
+        .works__wrapper:hover .works__card:not(:hover) {
+            opacity: 0.5;
+        }
+    }
+
+    .works__title {
+        min-width: 15%;
+        margin: 0;
+        font-family: $Bebas;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $colorSorbus;
+    }
+
+    .works__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0;
+    }
+
+    .works__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    .works__custom-line {
+        display: block;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        .works__header {
+            flex-wrap: wrap;
+        }
+    }
+
+    @include breakpoint(mobile-sm) {
+        .works__card {
+            width: 100%;
+        }
+    }
+}

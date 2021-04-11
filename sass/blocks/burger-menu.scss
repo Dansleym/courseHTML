@@ -1,0 +1,38 @@
+.burger-menu {
+    position: absolute;
+    top: 77px;
+    left: -1000px;
+    overflow: hidden;
+    height: 100%;
+    width: 50%;
+    padding: 0;
+    justify-content: center;
+    background: $white;
+    z-index: 10;
+    transition-property: left;
+    transition-duration: 500ms;
+
+    .burger-menu__list {
+        padding-top: 0;
+    }
+
+    .burger-menu__item {
+        padding: 10px;
+        border-top: 1px solid $colorSilver;
+
+        &:last-child {
+            border-bottom: 1px solid $colorSilver;
+        }
+    }
+
+    .burger-menu__link {
+        width: 100%;
+        font-family: $Bebas;
+        font-size: 1.9rem;
+        color: $black;
+    }
+
+    @include breakpoint(mobile-sm) {
+        width: 110%;
+    }
+}

@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .header__brand {
+        padding: 13px 0 8px;
+        font-family: $Bebas;
+        font-size: 3.1rem;
+        color: $colorSorbus;
+    }
+
+    .header__brand--color {
+        color: $colorWaxFlower;
+    }
+
+    @include breakpoint(tablet) {
+        justify-content: center;
+        height: 78px;
+
+        .header__menu {
+            display: none;
+        }
+    }
+}

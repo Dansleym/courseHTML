@@ -1,0 +1,29 @@
+.menu {
+    display: flex;
+    align-items: center;
+
+    .menu__list {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .menu__item {
+        padding-left: 25px;
+    }
+
+    .menu__link {
+        font-family: $Bebas;
+        font-size: 1.4rem;
+        color: $colorSilver;
+        transition-property: color;
+        transition-duration: 0.3s;
+
+        @include hovers() {
+            color: $colorSorbus;
+        }
+    }
+
+    .menu__link--active {
+        color: $colorSorbus;
+    }
+}

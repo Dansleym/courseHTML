@@ -1,0 +1,80 @@
+.portfolio {
+    padding-top: 30px;
+
+    .portfolio__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    .portfolio__content {
+        display: flex;
+    }
+
+    .portfolio__title {
+        max-width: 230px;
+        margin: 0 0 0 24px;
+        font-family: $Bebas;
+        font-size: 22px;
+        line-height: 1.1;
+        letter-spacing: 0.8px;
+        color: $colorSorbus;
+    }
+
+    .portfolio__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 33.333%;
+        padding: 10px;
+    }
+
+    .portfolio__header {
+        display: flex;
+        min-height: 50px;
+        align-items: center;
+    }
+
+    .portfolio__text {
+        max-width: 275px;
+        margin: 0;
+        padding-top: 28px;
+        padding-bottom: 20px;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .portfolio__button {
+        display: inline-block;
+        padding: 7px 14px 5px;
+        background-color: $colorSorbus;
+        font-family: $Bebas;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $white;
+        transition-property: background-color;
+        transition-duration: 0.3s;
+
+        @include hovers() {
+            background-color: darken($colorSorbus, 15%);
+        }
+    }
+
+    @include breakpoint(tablet) {
+        .portfolio__item {
+            width: 50%;
+            padding: 10px 10px 40px;
+        }
+
+        .portfolio__text {
+            max-width: none;
+        }
+    }
+
+    @include breakpoint(mobile-sm) {
+        .portfolio__item {
+            width: 100%;
+        }
+    }
+}

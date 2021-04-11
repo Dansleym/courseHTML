@@ -1,0 +1,84 @@
+.footer {
+    color: $white;
+
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: $colorSorbus;
+    }
+
+    .footer__title {
+        margin: 16px 0 22px;
+        font-family: $Bebas;
+        font-size: 1.4rem;
+        letter-spacing: 1.8px;
+        color: $white;
+    }
+
+    .footer__text, .footer__follow {
+        margin: 15px 0;
+        font-size: 0.7rem;
+        line-height: 1.3;
+        letter-spacing: 0.45px;
+    }
+
+    .footer__about {
+        display: block;
+        margin-top: 5px;
+        font-size: 0.7rem;
+        letter-spacing: 0.45px;
+        line-height: 1.3;
+    }
+
+    .footer__follow {
+        margin: 0;
+        padding-top: 7.5px;
+    }
+
+    .footer__icons-wrapper {
+        display: flex;
+    }
+
+    .footer__column {
+        width: 33.333%;
+        padding: 21px 16px 29px 35px;
+    }
+
+    .footer__link {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    .footer__text--opacity {
+        opacity: 0.5;
+        color: $white;
+    }
+
+    .footer__mailto, .footer__tel {
+        font-size: 0.7rem;
+        letter-spacing: 0.45px;
+        line-height: 1.3;
+        color: $white;
+        transition-property: color;
+        transition-duration: 0.3s;
+
+        @include hovers() {
+            color: $colorSilver;
+        }
+    }
+
+    @include breakpoint(tablet) {
+        .footer__column {
+            width: 50%;
+            padding: 21px 16px 29px 16px;
+        }
+    }
+
+    @include breakpoint(mobile-sm) {
+        .footer__column {
+            width: 100%;
+            padding: 5px 16px 5px
+        }
+    }
+}

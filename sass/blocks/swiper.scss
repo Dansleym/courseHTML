@@ -1,0 +1,44 @@
+.swiper {
+    .swiper-container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .swiper-slide-height {
+        height: 120px;
+    }
+
+    .gallery-top {
+        height: 401px;
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .gallery-thumbs {
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .gallery-thumbs {
+        opacity: 1;
+    }
+
+    @include breakpoint(tablet) {
+        .gallery-thumbs {
+            display: none;
+        }
+    }
+
+    @include breakpoint(mobile-sm) {
+        .gallery-top {
+            height: 300px;
+        }
+    }
+}

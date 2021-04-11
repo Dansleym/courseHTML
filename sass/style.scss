@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+@import "typography";
+@import "../node_modules/swiper/swiper-bundle";
+
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/burger-menu";
+@import "blocks/swiper";
+@import "blocks/portfolio";
+@import "blocks/works";
+@import "blocks/menu";
+@import "blocks/card";
+@import "blocks/footer";
